@@ -74,5 +74,6 @@ CREATE TABLE order_details (
     PRIMARY KEY (order_id, furniture_id)
 );
 
+/* ALTER TABLE order_details DROP foreign key order_details_ibfk_2; */
 ALTER TABLE order_details ADD FOREIGN KEY (order_id) REFERENCES orders(id);
 ALTER TABLE order_details ADD FOREIGN KEY (furniture_id) REFERENCES furnitures(id);

@@ -21,8 +21,10 @@ INSERT INTO categories(name) VALUES
 ('Ghế'),
 ('Giường'),
 ('Tủ quần áo'),
-('Tủ bếp');
+('Tủ bếp'),
+('Đồng hồ');
 select * from categories;
+
 
 INSERT INTO producers(name) VALUES
 ('IKEA'),
@@ -52,6 +54,7 @@ INSERT INTO orders(date_buy, status, customer_id, admin_id) VALUES
 ('2023-05-15', '1', '1', '4'),
 ('2023-05-14', '1', '3', '1');
 SELECT * FROM orders;
+delete from orders;
 
 INSERT INTO order_details(order_id, furniture_id, price, quantity) VALUES
 ('1', '7', '2000000', '1'),
@@ -60,6 +63,6 @@ INSERT INTO order_details(order_id, furniture_id, price, quantity) VALUES
 ('4', '8', '3000000', '1'),
 ('5', '4', '200000', '4');
 SELECT * FROM order_details;
-
+delete from order_details;
 
 
